@@ -13,9 +13,10 @@ nav {
 }
 
 img {
-width: 100%;
+width: 100%; 
 height: 100%;
 max-height: 50vh;
+padding: 20px;
 }
 
 .nav__container {
@@ -74,6 +75,7 @@ header{
 }
 
 .header__container {
+  padding-top: 24px;
   width: 100%;
   max-width: 720px;
   margin: 0 auto;
@@ -87,7 +89,7 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 80px auto;
+  margin: 0 auto;
 }
 
 .header__img--wrapper {
@@ -97,13 +99,13 @@ header{
  h1 {
   font-size: 56px;
   color: rgb(60, 34, 0);
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   text-align: center;
  }
 
   h2 {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
   font-size: 32px
   }
 
@@ -146,4 +148,16 @@ header{
 
   */ 
 
-  
+  .highlight__wrapper {
+    display: flex;
+
+  }
+
+  .highlight {
+    padding: 0 24px;
+    width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
