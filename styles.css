@@ -7,6 +7,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+scroll-behavior: smooth;
+}
+
 p {
   line-height: 1.5;
 }
@@ -14,6 +18,13 @@ p {
 nav {
   height: 80px;
   display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+ a:hover {
+  text-decoration: underline;
 }
 
 img {
@@ -34,7 +45,7 @@ padding: 20px;
 }
 
 .white {
-  color: white;
+  color: green;
 }
 .logo {
   width: 160px;
@@ -141,10 +152,16 @@ h1 {
   }
 
   .row {
-    padding-top: 48px;
+    padding-top: 100px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .row__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   /*
@@ -225,12 +242,14 @@ h1 {
   */
 
   #features {
-    height: 1000px;
+    padding-top: 8vw;
+    height: 800px;
     background-color: burlywood;
   }
 
   .books {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .book {
@@ -272,3 +291,63 @@ h1 {
     padding: 6px;
     color: gray;
   }
+/* LATEST */
+
+  /* 
+
+  EXPLORE
+
+  */
+
+  #explore {
+    background-color: burlywood;
+  }
+
+  .button__box {
+    display: flex;
+    margin: 0 auto;
+    padding: 4px 12px;
+    background-color: brown;
+    border: 2px none;
+    border-radius: 2px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.458) ;
+    margin-top: 32px;
+  }
+
+  p {
+font-size: 16px;  
+}
+
+
+  /* 
+
+  EXPLORE
+
+  */
+
+  footer {
+    background-color: gray;
+  }
+
+  .footer__logo {
+    display: flex;
+  }
+
+  .footer__logo--img {
+    width: 160px;
+    filter: grayscale(1) invert(1)
+  }
+
+  .footer__link,
+  .footer__copyright {
+    color: white;
+  }
+
+  .footer__list {
+    margin: 20px 0 24px 0;
+  }
+
+ .footer__link {
+  padding: 0 20px;
+
+ }
